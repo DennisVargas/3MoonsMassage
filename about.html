@@ -12,74 +12,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- BootStrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="3moonsstyle.css">
   </head>
-  <style>
-    .custom-menu{
-      background-color: #1f4162 /*background color of the header image text*/
-    }
-    body{
-      background-color: #efefef;
-    }
-  </style>
 
   <body>
-    <div class="container">
-      <div class="text-center">
-        <img src="assets/header-3moons.png" alt="3 Moons Header" class="img-fluid">
-      </div>
-    </div>    
-    <!-- nav bar -->
-    <nav class="navbar navbar-expand-md navbar-dark custom-menu text-light mx-auto">
-      <div class="container-fluid ">
-        <a class="navbar-brand d-md-none" href="index.html">
-          3 Moons Massage - <span class="bg-danger text-white text-center">On Hiatus</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bg-danger text-white" aria-current="page" href="temporarily-closed.html">Temporarily Closed</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Scheduling and Pricing
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="schedule-a-massage.html">Schedule A Massage</a></li>
-                <li><a class="dropdown-item" href="auto-collison-massage.html">Auto/Collision Massage</a></li>
-                <li><a class="dropdown-item" href="gift-certificates.html">Gift Certificates</a></li>
-                <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
-                <li><a class="dropdown-item" href="specials.html">Specials and Ways to Earn Extra Time</a></li>
-              </ul>
-            </li>    
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Technique Information (eng/esp)
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="techniques.html">Techniques</a></li>
-                <li><a class="dropdown-item" href="tecnicas.html">Técnicas</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="testimonials.html">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="massage-for-trauma.html">Massage For Trauma</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <p>
+    <div id="navbar-container"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+        });
+    </script>
+    <div class="content">
+      <p>
         I discovered myself as a healer 10 years ago last year, when a friend laid hands on another friend to relieve a headache, and I realized I could do the same.Two years later, on an island off of Cape Cod, I became a Reiki practitioner, moving quickly to the 2nd level. I am looking for the right person to bring me to the Master level…
 
         My first love was dance, and have practiced modern and other forms for 20+ years already! I also love a lot of sports, music, the outdoors, travel, humor, and humanitarian work.
@@ -93,6 +39,7 @@
         Assessment and Postural Analysis
         Myofascial Release/Detoxification
         Jin Shin-Do Acupressure, Shiatsu & Thai Massage Techniques
-    </p>
+      </p>
+    </div>
   </body>
 </html>

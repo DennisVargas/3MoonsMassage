@@ -12,103 +12,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- BootStrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="3moonsstyle.css">
   </head>
-  <style>
-    .custom-menu{
-      background-color: #1f4162 /*background color of the header image text*/
-    }
-    body{
-      background-color: #efefef;
-    }
-  </style>
-
   <body>
-    <div class="container">
-      <div class="text-center">
-        <img src="assets/header-3moons.png" alt="3 Moons Header" class="img-fluid">
-      </div>
-    </div>    
-    <!-- nav bar -->
-    <nav class="navbar navbar-expand-md navbar-dark custom-menu text-light mx-auto">
-      <div class="container-fluid ">
-        <a class="navbar-brand d-md-none" href="index.html">
-          3 Moons Massage - <span class="bg-danger text-white text-center">On Hiatus</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bg-danger text-white" aria-current="page" href="temporarily-closed.html">Temporarily Closed</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Scheduling and Pricing
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="schedule-a-massage.html">Schedule A Massage</a></li>
-                <li><a class="dropdown-item" href="auto-collison-massage.html">Auto/Collision Massage</a></li>
-                <li><a class="dropdown-item" href="gift-certificates.html">Gift Certificates</a></li>
-                <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
-                <li><a class="dropdown-item" href="specials.html">Specials and Ways to Earn Extra Time</a></li>
-              </ul>
-            </li>    
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Technique Information (eng/esp)
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="techniques.html">Techniques</a></li>
-                <li><a class="dropdown-item" href="tecnicas.html">Técnicas</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="testimonials.html">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="massage-for-trauma.html">Massage For Trauma</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <p>
-    </p>
+    <div id="navbar-container"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+        });
+    </script>
+    <div class="content">
+      <p>
+        Técnicas
+        En cuanto a mi estilo de trabajo, soy “escéptica intuitiva”. Me gusta que mis clientes estén seguros de que estoy utilizando las técnicas más refinadas y apropiadas para su bienestar. Busco aquellas que parecen ser la mas útiles, que incluye algunos, pero no limitado a: terapias holística, así como técnicas de masaje deportivo, profundo, y de la ciencias occidentales.
+        
+        Punto Gatillo y Masaje Profundo
+        
+        La premisa básica del punto gatillo es que la mayoría de los músculos tienen un patrón predecible, algo así como botones, que se pueden utilizar para eliminar la tensión muscular. En combinación con un tipo de presión que priva temporalmente el músculo (punto de gatillo) (sic) de oxígeno, lo que obliga a relajarse. Regresando lento, y tenemos un nuevo para usted!
+        
+        Liberación Miofacial
+        
+        Mio-facial significa musuco facial, esencialmente. La facial es una capa de tejido conectivo que alinea y contiene todas las capas de los músculos en el cuerpo. Puede funcionar sin problemas, pero, debido a la combinación de la deshidratación continua lesiones, toxicidad (por el consumo de algunos alimentos y la productos de desecho que pueden llegar a ser almacenada en los músculos, por muchas razones: la falta de suficientes oportunidades para el ejercicio agradable (la verdadera razón por la que creo que no siempre hacemos el ejercicio necesario, no porque somos perezosos :)), el estrés, el exceso de uso, candidiasis (recomiendo encarecidamente la limpieza con una dieta alcalida -cambió mi vida -, también recomiendo especialmente beber limonada u otras causas médicas, puede pegar estas capas entre sí de maneras que son incómodas y menos eficiente.
+        Además, no todos los tipos de miofaciales eliminan eficazmente las adhesiones, sino que también pueden aumentar las posibilidades de drenaje linfático, una modalidad muy suave y lento pero profundo que facilita la liberación de grandes cantidades de toxinas de los ganglios linfáticos ubicados en todo el cuerpo.
+        
+        Facilitación neuromuscular propioceptiva
+        La forma más eficiente científicamente probado para estirar
+        El qué y el por qué de esto y cómo funcion es, supuestamente, sobre los reflejos, pero creo que la cosa sobre ella que es más eficaz tiene más que ver con la eficiencia de la técnica en realidad. Como sabemos, los músculos se fatigan, y por lo tanto, entran en calor, ya que se contraen. Lo que no todos son conscientes es de que el ejercicio y estirar mejora nuestros músculos mediante pequeños desgarros, y luego la reconstrucción, los músculos se vuelven más largos o más fuerte y con suerte, los dos. Mi idea acerca de la FNP, además de calentar el músculo y aumenta la capacidad para estirarlos más rápidos, es que casi actúa como pasador y tramo (una forma de masaje, altamente eficiente, que también hago), y crea más microdesgarro y por tanto, se extiende su músculo ¡Más rápido! Y también se fortalece un poco en el proceso.
+        
+        También he utilizado 20 años de formación en baile, entrenamiento en Tai Chi, y e compartido con amigos y colegas sobre movimientos y terapia de deportes y egoscue , Pilates y yoga para crear formas innovadoras y revolucionarias para estirar y brindarle al cuerpo una mejor sanación sin tener que hacer cambios rigurosos por tiempos prologando. Estos trabajos de estiramientos se puede aplicar a cualquier músculo por 90 segundos- y puede llevarse un método para que lo aplique en su casa.
+        
+        Evaluación funcional de la técnica Onsen – Muy popular entre los atletas que tienen la suerte de descubrir este método de alta precisión de evaluación, fue creado por Rich Phaigh. He tenido la suerte de recoger un poco de información sobre esta técnica en lo que respecta a la disfunción pélvica, mi área de interés especial, como un atleta que sufrió de una lesión toraco-lumbar de la infancia de mi propia.
+        
+        Entrenamiento Tai Chi:
+        Practicándolo adecuadamente, esta formación se puede utilizar para maximizar la fuerza, por lo que incluso una chica no tan robusta como yo puede utilizar dicha presión profunda para que mi herramienta de punto de gatillo y masaje de tejido profundo especial recoga las toxinas en mi. Aunque tengo que aclarar que no estoy llena de toxinas, pero si estoy en deuda con los mucho que lucharon para mantener vivo este arte. Me ha ayudado a desarrollar el equilibrio y así tener una mejor claridad en mi trabajo.
+        
+        Thai, Jin-Shin (Chino )Trabajos de energía Meridian y Reiki , Thai, Jin-Shin(un sistema Meridiano chino basada en la acupresión, expuesto en el Occidente) y Shiatsu se basan en sistemas de meridianos. Yo trabajo con estas modalidades, mientras que mi base es más de una práctica estilo sueco.
+        
+        Próximamente – más experiencia en conjuntos de movimiento para la liberación del arco reflejo miotatico, energía muscular, técnicas estructural de lanzamientos , y contratación de seguros.
+        
+        Que nuestros esfuerzos en la sanación sea fructífera,
+        Y le deseo lo mejor para usted y los suyos!
+      </p>
+    </div>
   </body>
 </html>
-Técnicas
-En cuanto a mi estilo de trabajo, soy “escéptica intuitiva”. Me gusta que mis clientes estén seguros de que estoy utilizando las técnicas más refinadas y apropiadas para su bienestar. Busco aquellas que parecen ser la mas útiles, que incluye algunos, pero no limitado a: terapias holística, así como técnicas de masaje deportivo, profundo, y de la ciencias occidentales.
-
-Punto Gatillo y Masaje Profundo
-
-La premisa básica del punto gatillo es que la mayoría de los músculos tienen un patrón predecible, algo así como botones, que se pueden utilizar para eliminar la tensión muscular. En combinación con un tipo de presión que priva temporalmente el músculo (punto de gatillo) (sic) de oxígeno, lo que obliga a relajarse. Regresando lento, y tenemos un nuevo para usted!
-
-Liberación Miofacial
-
-Mio-facial significa musuco facial, esencialmente. La facial es una capa de tejido conectivo que alinea y contiene todas las capas de los músculos en el cuerpo. Puede funcionar sin problemas, pero, debido a la combinación de la deshidratación continua lesiones, toxicidad (por el consumo de algunos alimentos y la productos de desecho que pueden llegar a ser almacenada en los músculos, por muchas razones: la falta de suficientes oportunidades para el ejercicio agradable (la verdadera razón por la que creo que no siempre hacemos el ejercicio necesario, no porque somos perezosos :)), el estrés, el exceso de uso, candidiasis (recomiendo encarecidamente la limpieza con una dieta alcalida -cambió mi vida -, también recomiendo especialmente beber limonada u otras causas médicas, puede pegar estas capas entre sí de maneras que son incómodas y menos eficiente.
-Además, no todos los tipos de miofaciales eliminan eficazmente las adhesiones, sino que también pueden aumentar las posibilidades de drenaje linfático, una modalidad muy suave y lento pero profundo que facilita la liberación de grandes cantidades de toxinas de los ganglios linfáticos ubicados en todo el cuerpo.
-
-Facilitación neuromuscular propioceptiva
-La forma más eficiente científicamente probado para estirar
-El qué y el por qué de esto y cómo funcion es, supuestamente, sobre los reflejos, pero creo que la cosa sobre ella que es más eficaz tiene más que ver con la eficiencia de la técnica en realidad. Como sabemos, los músculos se fatigan, y por lo tanto, entran en calor, ya que se contraen. Lo que no todos son conscientes es de que el ejercicio y estirar mejora nuestros músculos mediante pequeños desgarros, y luego la reconstrucción, los músculos se vuelven más largos o más fuerte y con suerte, los dos. Mi idea acerca de la FNP, además de calentar el músculo y aumenta la capacidad para estirarlos más rápidos, es que casi actúa como pasador y tramo (una forma de masaje, altamente eficiente, que también hago), y crea más microdesgarro y por tanto, se extiende su músculo ¡Más rápido! Y también se fortalece un poco en el proceso.
-
-También he utilizado 20 años de formación en baile, entrenamiento en Tai Chi, y e compartido con amigos y colegas sobre movimientos y terapia de deportes y egoscue , Pilates y yoga para crear formas innovadoras y revolucionarias para estirar y brindarle al cuerpo una mejor sanación sin tener que hacer cambios rigurosos por tiempos prologando. Estos trabajos de estiramientos se puede aplicar a cualquier músculo por 90 segundos- y puede llevarse un método para que lo aplique en su casa.
-
-Evaluación funcional de la técnica Onsen – Muy popular entre los atletas que tienen la suerte de descubrir este método de alta precisión de evaluación, fue creado por Rich Phaigh. He tenido la suerte de recoger un poco de información sobre esta técnica en lo que respecta a la disfunción pélvica, mi área de interés especial, como un atleta que sufrió de una lesión toraco-lumbar de la infancia de mi propia.
-
-Entrenamiento Tai Chi:
-Practicándolo adecuadamente, esta formación se puede utilizar para maximizar la fuerza, por lo que incluso una chica no tan robusta como yo puede utilizar dicha presión profunda para que mi herramienta de punto de gatillo y masaje de tejido profundo especial recoga las toxinas en mi. Aunque tengo que aclarar que no estoy llena de toxinas, pero si estoy en deuda con los mucho que lucharon para mantener vivo este arte. Me ha ayudado a desarrollar el equilibrio y así tener una mejor claridad en mi trabajo.
-
-Thai, Jin-Shin (Chino )Trabajos de energía Meridian y Reiki , Thai, Jin-Shin(un sistema Meridiano chino basada en la acupresión, expuesto en el Occidente) y Shiatsu se basan en sistemas de meridianos. Yo trabajo con estas modalidades, mientras que mi base es más de una práctica estilo sueco.
-
-Próximamente – más experiencia en conjuntos de movimiento para la liberación del arco reflejo miotatico, energía muscular, técnicas estructural de lanzamientos , y contratación de seguros.
-
-Que nuestros esfuerzos en la sanación sea fructífera,
-Y le deseo lo mejor para usted y los suyos!
