@@ -1,10 +1,13 @@
 body{
   background-color: #efefef;
+
 }
 .custom-menu{
   background-color: #1f4162 /*background color of the header image text*/
 }
 .content{
   margin-top: 250px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
