@@ -2,6 +2,9 @@ body{
   background-color: #efefef;
   background-image: url('assets/bg-3-moons.jpg');
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to 100% of viewport height */  
 }
 .custom-menu{
   background-color: #1f4162 /*background color of the header image text*/
@@ -10,8 +13,15 @@ body{
   margin-top: 270px;
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom:5%;
+  margin-bottom: 32px;
+  flex: 1;
 }
 #header-container{
   background-color: #efefef;
+}
+#footer-container{
+  background-color: #4a4a4a;
+  text-align: center;
+  color:white;
+  padding: 16px;
 }
