@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="h2 text-center">Welcome to 3 Moons Massage</div>
-      <hr>
+
       <!-- old site content -->
       <div class="h3">Meet Alexandra</div>
       <div class="h5">Hello, and welcome.</div>
@@ -87,5 +87,15 @@
       <p>Alexandra Myers, LMT 13978<br>
       3 Moons Massage</p>
     </div>
+    <div id="footer-container"></div>
+
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+    
   </body>
 </html>
