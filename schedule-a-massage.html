@@ -85,5 +85,14 @@
         Keywords: Massage, Massages, Massage Portland, deep tissue portland, deep tissue massage portland, portland massage, hot stone massage, therapy massage, massage therapy, trigger points, trigger point massage,massage trigger points, sports injury massage, sports injuries massage, massage sports injuries, massage sports injury, massage hot stones, neuromuscular, accident, accident treatment, accident treatment for pain, accident pain, accident massage, accident therapy, affordable massage, east portland massage, se portland massage, close in portland massage
       </p>
     </div>
+    <div id="footer-container"></div>
+
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
   </body>
 </html>
